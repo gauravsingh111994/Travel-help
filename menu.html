@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    <link href="ddmenu/ddmenu.css" rel="stylesheet" type="text/css" />
+    <script src="ddmenu/ddmenu.js" type="text/javascript"></script>
+	
+   
+</head>
+
+<body>
+<nav id="ddmenu">
+    
+    <ul>
+	<li class="no-sub">
+            <a class="top-heading" href="index.php">HOME</a>
+        </li>
+		
+		
+		 <li>
+            <a class="top-heading" href="#">SIGN IN</a>
+			<i class="caret"></i>           
+            <div class="dropdown mayRight">
+                <div class="dd-inner">
+                    <div class="column">
+                       <form action="login.php" method="post">
+                       <h4>USERNAME</h4>
+					   <input type="text" name="username">
+					   <h4>PASSWORD</h4>
+					   <input type="password" name="pass"><br>
+					   <input type="submit"  name="submit" style="background-color:skyblue">
+                       </form>
+                       
+                    </div>
+                </div>
+            </div>
+        </li>
+		
+		
+		 <li>
+            <a class="top-heading" href="#">SIGN UP</a>
+			<i class="caret"></i>           
+            <div class="dropdown mayRight">
+                <div class="dd-inner">
+                    <div class="column">
+                      <form action='database.php' method='POST'>
+                       <h4>UNIQUE USERNAME</h4>
+					
+				 <input placeholder='Unique username' type='text' name='user'>
+   <h4>EMAIL-ID</h4>
+					  	<input placeholder='Email-id' type='text' name='em'>
+						
+					<h4>PASSWORD</h4>
+					   <input type="password" placeholder="Password" name="pass"><br>
+					   <input type="submit"  name="submit" style="background-color:skyblue">
+					   
+                       </form>
+                       
+                    </div>
+                </div>
+            </div>
+        </li>
+			</ul>
+</nav>
+   
+</body>
+</html>
